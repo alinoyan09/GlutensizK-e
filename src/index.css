@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "leaflet/dist/leaflet.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", Playfair Display, Georgia, ui-serif, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-natural-bg: #F5F5F0;
+  --color-natural-text: #33332D;
+  --color-natural-primary: #5A5A40;
+  --color-natural-hover: #4A4A35;
+  --color-natural-card: #F9F9F4;
+  --color-natural-border: #E0E0D6;
+  --color-natural-badge-bg: #E2E8CE;
+  --color-natural-badge-text: #4A4A35;
+  --color-natural-muted: #707060;
+  --color-natural-dark: #2C2C24;
+  --color-natural-light: #F9F9F4;
+}
+
+/* Custom map popup / tooltip styling overrides to look beautiful and use Natural Tones */
+.leaflet-popup-content-wrapper {
+  background: #F9F9F4 !important;
+  color: #33332D !important;
+  border: 1px solid #E0E0D6 !important;
+  border-radius: 1.25rem !important;
+  box-shadow: 0 10px 25px -5px rgba(90, 90, 64, 0.1), 0 8px 10px -6px rgba(90, 90, 64, 0.1) !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  width: auto !important;
+  min-width: 250px;
+}
+
+.leaflet-popup-tip {
+  background: #F9F9F4 !important;
+  border-left: 1px solid #E0E0D6 !important;
+  border-top: 1px solid #E0E0D6 !important;
+}
+
+.leaflet-tooltip {
+  background: #5A5A40 !important;
+  color: #F9F9F4 !important;
+  border: 1px solid #E0E0D6 !important;
+  border-radius: 0.5rem !important;
+  padding: 0.35rem 0.75rem !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 6px -1px rgba(90, 90, 64, 0.15) !important;
+}
+
+/* Custom scrollbar for sidebar listings using Natural Tones colors */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D0D0C0;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #A0A090;
+}
+

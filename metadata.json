@@ -1,0 +1,6 @@
+{
+  "name": "Türkiye Glutensiz Kafe Haritası",
+  "description": "Türkiye'deki glutensiz kafeleri gösteren, Leaflet.js ve OpenStreetMap destekli etkileşimli harita ve rehber.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
